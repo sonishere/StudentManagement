@@ -4,7 +4,7 @@ public class StudentManagement {
 
     public static boolean sameGroup(Student s1, Student s2) {
         // TODO:
-        return false; // xoa dong nay sau khi cai dat
+
     }
 
     public void addStudent(Student newStudent){

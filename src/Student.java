@@ -10,11 +10,11 @@ public class Student {
 
     // TODO: khai bao cac phuong thuc getter, setter cho Student
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String n) {
-        name = n;
+        this.name = n;
     }
 
 
@@ -23,10 +23,10 @@ public class Student {
      */
     Student() {
         // TODO:
-        name = 'Student';
-        id = '000';
-        group = 'K62CB';
-        email = 'uet@vnu.edu.vn';
+        this.name = 'Student';
+        this.id = '000';
+        this.group = 'K62CB';
+        this.email = 'uet@vnu.edu.vn';
     }
 
     /**
@@ -51,13 +51,13 @@ public class Student {
      */
     Student(Student s) {
         // TODO:
-        name = s.name;
-        id = s.id;
-        group = s.group;
-        email = s.email;
+        this.name = s.name;
+        this.id = s.id;
+        this.group = s.group;
+        this.email = s.email;
     }
 
     String getInfo() {
-        System.out.println(name + " - " + id + " - " + group + " - " + email);
+        return name + " - " + id + " - " + group + " - " + email;
     }
 }
