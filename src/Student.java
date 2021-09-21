@@ -17,6 +17,29 @@ public class Student {
         this.name = n;
     }
 
+    public String getId() {
+        return this.id;
+    }
+
+    public void setId(String n) {
+        this.id = n;
+    }
+
+    public String getGroup() {
+        return this.group;
+    }
+
+    public void setGroup(String n) {
+        this.group = n;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+
+    public void setEmail(String n) {
+        this.email = n;
+    }
 
     /**
      * Constructor 1
