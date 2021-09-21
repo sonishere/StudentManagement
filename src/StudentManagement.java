@@ -1,25 +1,44 @@
 public class StudentManagement {
 
-    // TODO: khai bao thuoc tinh students la array chua cac doi tuong thuoc lop Student (max. 100)
-    String[] students = new String[100];
+    Student[] students = new Student[100];
+    int index = 0;
 
     public static boolean sameGroup(Student s1, Student s2) {
-        // TODO:
         return s1.getGroup().equals(s2.getGroup());
     }
 
-    public void addStudent(Student newStudent){
-        // TODO:
-        
+    public void addStudent(Student newStudent) {
+        students[index] = newStudent;
+        index++;
     }
 
     public String studentsByGroup() {
-        // TODO:
-        return null;
+        if (index = 0) {
+            return null;
+        }
+
+        String title = students[0].getGroup();
+        String result = title + "\n";
+        for (int i = 0; i < indexCount; i++) {
+            if (!title.equals(students[i].getGroup())) {
+                title = students[i].getGroup();
+                result += title + "\n";
+            }
+            result += students[i].getInfo() + "\n";
+        }
+        return result;
     }
 
     public void removeStudent(String id) {
-        // TODO:
+        for (int i = 0; i <= index; i++) {
+            if (students[i].getId() == id) {
+                for (int j = 0; j <= index; j++) {
+                    students[j] = students[j + 1];
+
+                }
+                break;
+            }
+        }
     }
 
     public static void main(String[] args) {

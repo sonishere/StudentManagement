@@ -64,7 +64,7 @@ public class Student {
         this.name = name;
         this.id = id;
         this.email = email;
-        this.group = 'K62CB';
+        group = 'K62CB';
     }
 
     /**
@@ -81,6 +81,6 @@ public class Student {
     }
 
     String getInfo() {
-        return name + " - " + id + " - " + group + " - " + email;
+        return this.name + " - " + this.id + " - " + this.group + " - " + this.email;
     }
 }
